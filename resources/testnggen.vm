@@ -1,0 +1,79 @@
+########################################################################################
+##
+## Available variables:
+##         $entryList.methodList - ArrayList of method names
+##         $entryList.fieldList - ArrayList of class scope field names
+##         $entryList.className - class name
+##         $entryList.packageName - package name
+##         $today - Today's date in "MM/DD/YYYY" format
+##         $todayLong - Today's date in "Month Day, Year" format
+##         $author - The author (current user) name.
+##         $hasAnnotations - Is set to true if annotations (>= JDK 1.5) are available.
+##
+## You can configure the output class name using "testClass" variable below.
+## Here are some examples:
+## Test${entry.ClassName} - will produce TestSomeClass
+## ${entry.className}Test - will produce SomeClassTest
+##
+########################################################################################
+##
+#macro (cap $strIn)$strIn.valueOf($strIn.charAt(0)).toUpperCase()$strIn.substring(1)#end
+## Iteratre through the list and generate testcase for every entry.
+#foreach ($entry in $entryList)
+#set( $testClass="${entry.className}Test")
+##
+package $entry.packageName;
+
+#if($hasAnnotations)
+import org.testng.annotations.*;
+#else
+import org.testng.Assert;
+#end
+
+/**
+ * ${entry.className} Tester.
+ *
+ * @author  $author
+ * @version $Revision$, $Date$
+ * @created $todayLong
+ * @since   1.0
+ */
+public class $testClass
+{
+#if($hasAnnotations)
+    @Configuration(beforeTestClass = true)
+#else
+    /**
+     * Test Setup.
+     *
+     * @testng.configuration beforeTestClass = "true"
+     */
+#end
+    public void setUp()
+    {
+        //TODO: Code that will be invoked when this test is instantiated
+    }
+
+#foreach($method in $entry.methodList)
+#if($hasAnnotations)
+    @Test
+#else
+    /**
+     * $method Tester.
+     *
+     * @testng.test
+     */
+#end
+    public void test#cap(${method})()
+    {
+        //TODO: Test goes here...
+#if($hasAnnotations)
+        assert false : "test#cap(${method}) not implemented.";
+#else
+        Assert.assertFalse(true, "test#cap(${method}) not implemented.");
+#end
+    }
+
+#end
+}
+#end

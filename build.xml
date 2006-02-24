@@ -1,0 +1,64 @@
+<project name="testnggen" basedir="." default="all">
+    <target name="init" description="initializes all the variables for the build">
+        <property file="build.properties"/>
+
+        <fail unless="version" message="version property is missing, see build.properties"/>
+
+        <property name="src.dir" value="${basedir}/src"/>
+        <property name="dist.dir" value="${basedir}/dist"/>
+        <property name="lib.dir" value="${basedir}/lib"/>
+
+        <property name="jar.file" location="${dist.dir}/${ant.project.name}.jar"/>
+        <property name="dist.file" value="${dist.dir}/${ant.project.name}-${version}"/>
+
+        <filterset id="dirs.filterset">
+            <filter token="VERSION" value="${version}"/>
+        </filterset>
+
+        <path id="class.path">
+            <fileset dir="${lib.dir}">
+                <include name="**/*.jar"/>
+            </fileset>
+        </path>
+    </target>
+
+    <target name="all" depends="clean, compile, deploy" description="executes all the targets in the build file"/>
+
+    <target name="compile" depends="init" description="compiles the source">
+        <mkdir dir="classes"/>
+        <javac srcdir="${src.dir}" destdir="${basedir}/classes" deprecation="true" debug="true">
+            <include name="**/*.java"/>
+            <classpath refid="class.path"/>
+        </javac>
+    </target>
+
+    <target name="deploy" depends="compile"
+            description="creates all the needed distribution files and packages them into zip file.">
+        <mkdir dir="${dist.dir}"/>
+
+        <zip destfile="${dist.file}-src.zip" basedir="${basedir}" excludes="classes/**,dist/**"/>
+
+        <mkdir dir="${dist.dir}"/>
+        <copy todir="${basedir}/classes">
+            <fileset dir="${basedir}" includes="META-INF/**"/>
+            <filterset refid="dirs.filterset"/>
+        </copy>
+
+        <jar jarfile="${jar.file}" basedir="${basedir}/classes">
+            <fileset dir="${src.dir}" includes="**/*.gif"/>
+        </jar>
+
+        <zip destfile="${dist.file}.zip">
+            <zipfileset dir="${basedir}" includes="resources/**"/>
+            <zipfileset file="${jar.file}"/>
+        </zip>
+    </target>
+
+    <target name="clean" depends="init" description="cleans the classes and dist directories.">
+        <delete quiet="true" includeEmptyDirs="true">
+            <fileset dir="${basedir}/classes" includes="*,*/**"/>
+            <fileset dir="${dist.dir}" includes="*,*/**"/>
+        </delete>
+    </target>
+
+</project>

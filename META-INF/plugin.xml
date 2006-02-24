@@ -1,0 +1,47 @@
+<idea-plugin url="http://www.intellij.org/twiki/bin/view/Main/TestNGGenerator">
+    <name>TestNG Generator</name>
+    <description>
+        <![CDATA[
+            Automatically generates a TestNG test class skeleton for all of the current class methods.<br>
+            The output is produced using a Velocity template, which can be modified to meet your specific needs.<br>
+            If a test class already exists, your will be prompted to either
+            overwrite or compare the test class using diff panels.<br>
+        ]]>
+    </description>
+    <version>@VERSION@</version>
+    <vendor email="erik@thauvin.net" url="http://erik.thauvin.net/">Erik C. Thauvin</vendor>
+    <idea-version since-build="4155"/>
+
+    <change-notes>
+        <![CDATA[
+            <b>1.0</b> Based on Alex Nazimok's JUnit Generator 1.1.6<br> 
+        ]]>
+    </change-notes>
+
+
+    <application-components>
+        <component>
+            <implementation-class>org.intellij.plugins.testnggen.TestNGGenerator</implementation-class>
+            <interface-class>org.intellij.plugins.testnggen.TestNGGenerator</interface-class>
+        </component>
+
+        <component>
+            <implementation-class>org.intellij.plugins.testnggen.ui.TestNGGenConfig</implementation-class>
+            <option name="workspace" value="true"/>
+        </component>
+    </application-components>
+
+    <actions>
+        <action id="Actions.ActionsPlugin.TestNGGenerator"
+                class="org.intellij.plugins.testnggen.TestNGGeneratorAction"
+                text="TestNG Test Class"
+                description="Generates TestNG test class skeleton, including all methods of the tested class.">
+        </action>
+
+        <group>
+            <reference id="Actions.ActionsPlugin.TestNGGenerator"/>
+            <add-to-group group-id="GenerateGroup" anchor="after" relative-to-action="GenerateEquals"/>
+        </group>
+    </actions>
+
+</idea-plugin>
