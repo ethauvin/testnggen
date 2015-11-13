@@ -133,10 +133,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DiffFileAction.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DiffFileAction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/intellij/plugins/testnggen/diff/DiffFileAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="58" selection-start="678" selection-end="678" vertical-scroll-proportion="0.22731614">
+            <state line="21" column="58" selection-start="678" selection-end="678" vertical-scroll-proportion="0.22796935">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plugin.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -162,6 +171,15 @@
     <option name="SCOPE_TYPE" value="1" />
     <option name="CUSTOM_SCOPE_NAME" value="Project Files" />
     <profile name="Erik's Inspections" />
+  </component>
+  <component name="IntelliTail">
+    <property name="font-name" value="Dialog" />
+    <property name="font-size" value="11" />
+    <property name="font-style" value="0" />
+    <property name="buffer-wrap" value="false" />
+    <property name="buffer-size" value="50" />
+    <property name="external-editor" value="c:\Windows\System32\notepad.exe" />
+    <property name="open-files" value="" />
   </component>
   <component name="J2EEProjectPane">
     <PATH>
@@ -304,7 +322,7 @@
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="PsiDirectory:C:\Documents and Settings\erik\My Documents\My Downloads\testnggen" />
+        <option name="myItemId" value="PsiDirectory:H:\java\testnggen" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
       </PATH_ELEMENT>
     </PATH>
@@ -318,29 +336,11 @@
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="PsiDirectory:C:\Documents and Settings\erik\My Documents\My Downloads\testnggen" />
+        <option name="myItemId" value="PsiDirectory:H:\java\testnggen" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="PsiDirectory:C:\Documents and Settings\erik\My Documents\My Downloads\testnggen\resources" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="testnggen.ipr" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="testnggen" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="PsiDirectory:C:\Documents and Settings\erik\My Documents\My Downloads\testnggen" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="PsiDirectory:C:\Documents and Settings\erik\My Documents\My Downloads\testnggen\META-INF" />
+        <option name="myItemId" value="PsiDirectory:H:\java\testnggen\META-INF" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
       </PATH_ELEMENT>
     </PATH>
@@ -349,7 +349,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="PackagesPane" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -389,21 +389,17 @@
   <component name="RestoreUpdateTree" />
   <component name="RunManager">
     <activeType name="TestNG" />
-    <configuration selected="false" default="true" type="Application" factoryName="Application">
+    <configuration selected="false" default="true" type="Applet" factoryName="Applet">
+      <module name="" />
       <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <module name="" />
-    </configuration>
-    <configuration selected="false" default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
     </configuration>
     <configuration selected="false" default="true" type="JUnit" factoryName="JUnit">
       <module name="" />
@@ -420,6 +416,15 @@
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="wholeProject" />
       </option>
+    </configuration>
+    <configuration selected="false" default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <module name="" />
     </configuration>
     <configuration selected="false" default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
@@ -440,17 +445,12 @@
       </option>
       <properties />
     </configuration>
-    <configuration selected="false" default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+    <configuration selected="false" default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
     </configuration>
   </component>
   <component name="SelectInManager" />
@@ -503,7 +503,7 @@
       <window_info id="CVS" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="8" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="8" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="7" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="true" weight="0.19151671" order="0" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="true" weight="0.1966581" order="0" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.32980132" order="1" />
       <window_info id="Jalopy" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="8" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.25" order="1" />
@@ -514,14 +514,15 @@
       <window_info id="Favorites" active="false" anchor="right" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.3293556" order="3" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="docked" type="docked" visible="true" weight="0.07390746" order="1" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.32980132" order="2" />
+      <window_info id="IntelliTail" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="8" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.25" order="2" />
       <window_info id="File View" active="false" anchor="right" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="3" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="sliding" type="sliding" visible="false" weight="0.4" order="0" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.4" order="4" />
       <window_info id="BSFConsole" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.32980132" order="8" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="sliding" type="sliding" visible="false" weight="0.4" order="0" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="8" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.25" order="2" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="0" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.25" order="2" />
       <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.25" order="3" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.25" order="5" />
     </layout>
@@ -702,7 +703,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/intellij/plugins/testnggen/diff/DiffFileAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="58" selection-start="678" selection-end="678" vertical-scroll-proportion="0.22731614">
+        <state line="21" column="58" selection-start="678" selection-end="678" vertical-scroll-proportion="0.22796935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

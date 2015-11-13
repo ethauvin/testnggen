@@ -1,3 +1,6 @@
+*.iws
 /.svn/
 /classes/
 /dist/
+Thumbs.db
+ehthumbs.db
